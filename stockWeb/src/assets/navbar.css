@@ -1,0 +1,46 @@
+ /* 固定選單 */
+ .navbar {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-color: #333;
+     z-index: 1000;
+
+ }
+
+ .active {
+     background-color: cornflowerblue;
+
+ }
+
+ .navbar ul {
+     margin: 0;
+     padding: 10px 20px;
+     list-style-type: none;
+     text-align: center;
+     background-color: #0f0f0f;
+
+ }
+
+ .navbar ul li {
+     display: inline;
+     margin: 0 15px;
+ }
+
+ .navbar ul li a {
+     color: white;
+     text-decoration: none;
+     padding: 2px 8px;
+     /* 添加內邊距來讓按鈕區域更大 */
+     display: inline-block;
+     /* 讓元素顯示為塊級元素 */
+     transition: background-color 0.3s ease;
+     /* 添加過渡效果 */
+ }
+
+ /* 當滑鼠懸停在選單按鈕時改變背景顏色 */
+ .navbar ul li a:hover {
+     background-color: #0f0f0f;
+     /* 這是深色背景，可以根據需要修改顏色 */
+ }
